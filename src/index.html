@@ -6,9 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+   <header>
+      <figure>
+        <img src="imagem.jpg" alt="Logo da rádio" id="radioLogo">
+      </figure>    
+    </header>
+    <main>
+      <textarea cols="50" rows="5" class="textArea" id="inputText" placeholder="Digite sua palava"></textarea>
+      <label>
+        Selecione o deslocamento:
+        <input type="number" min="1" max="10" value="1" id="offset">
+      </label>
+      <textarea cols="50" rows="5" class="textArea" id="outputText" disabled></textarea>
+      <div id="buttons">
+        <input type="button" value="Cifrar" class="inputButtons" id="cipherBtn">
+        <input type="button" value="Decifrar" class="inputButtons" id="decipherBtn">
+      </div>
+      <!--<figure>
+        <img src="" alt="Logo do Governo Russo" id="russianLogo">
+      </figure>-->
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>
