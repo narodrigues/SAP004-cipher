@@ -1,47 +1,45 @@
 const cipher = {
 
   encode: function(offset, string){
-    /*((codigoDaLetraASC - CódigoDaLetraA(65) + deslocamento) % 26) + CódigoDaLetraA    -> dessa forma o A se torna 0 e depois volta para o código ASC original para retornar a nova letra pós deslocamento
-      ("A".charCodeAt(0) - 65 ...)
-      string.fromCharCode(código)*/   
-    let upperCase = string.toUpperCase(); 
     let msg = "";
 
-    for(let i = 0; i < upperCase.length; i++){
-        let originalLetter = upperCase.charCodeAt(i);
+    if(typeof offset !== "number" || typeof string !== "string"){
+      throw new TypeError;
+    } else {
+      for(let i = 0; i < string.length; i++){
+        let originalLetter = string.charCodeAt(i);
+        let newLetter = null;
         
-        if(originalLetter === 32){
+        if(originalLetter >= 65 && originalLetter <= 90){
+          newLetter = ((originalLetter - 65 + offset) % 26) + 65;
+          msg += String.fromCharCode(newLetter);  
+        } else if(originalLetter >= 97 && originalLetter <= 122){
+          newLetter = ((originalLetter - 97 + offset) % 26) + 97;
+          msg += String.fromCharCode(newLetter);  
+        } else {
           msg += String.fromCharCode(originalLetter);
-          continue;
-        }
-
-        let newLetter = ((originalLetter - 65 + offset) % 26) + 65;
-        msg += String.fromCharCode(newLetter);
+        } 
+      }
+      return msg;
     }
-    return msg;
   },
 
   decode: function(offset, string){
-    let upperCase = string.toUpperCase(); 
     let msg = "";
 
-    for(let i = 0; i < upperCase.length; i++){
-      let originalLetter = upperCase.charCodeAt(i); 
-
-      if(originalLetter === 32){
-        msg += String.fromCharCode(originalLetter);
-        continue;
-      }
+    for(let i = 0; i < string.length; i++){
+      let originalLetter = string.charCodeAt(i);
+      let newLetter = null;
       
-      let newLetter = ((originalLetter - 65 - offset)% 26);     
-          
-      if(newLetter < 0){
-          newLetter += 65 + 26;
+      if(originalLetter >= 65 && originalLetter <= 90){
+        newLetter = ((originalLetter - 90 - offset) % 26) + 90;
+        msg += String.fromCharCode(newLetter);  
+      } else if(originalLetter >= 97 && originalLetter <= 122){
+        newLetter = ((originalLetter - 122 - offset) % 26) + 122;
+        msg += String.fromCharCode(newLetter);  
       } else {
-          newLetter += 65;
-      }
-
-      msg += String.fromCharCode(newLetter);
+        msg += String.fromCharCode(originalLetter);
+      } 
     }
     return msg;
   }
