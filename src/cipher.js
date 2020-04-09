@@ -3,7 +3,7 @@ const cipher = {
   encode: function(offset, string){
     let msg = "";
 
-    if(typeof offset !== "number" || typeof string !== "string"){
+    if(typeof offset !== "number" || typeof string !== "string" || offset < 1 || offset > 10){
       throw new TypeError;
     } else {
       for(let i = 0; i < string.length; i++){
