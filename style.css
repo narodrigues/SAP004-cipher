@@ -1,0 +1,108 @@
+body {
+    display: grid;
+    font-family: 'Russo One', sans-serif;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 215px 400px 100px;
+    grid-template-areas:
+        "logo logo logo"
+        "logo2 input botao"
+        "logo2 input botao";
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+textarea {
+    background-color: black;
+    border: 2px solid #00611d;
+    border-radius: 5px;
+    color: #00d040;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+label {
+    color: #5a6b5a;
+    font-size: 20px;
+}
+
+#outputText {
+    background-color: #0a0a0a;
+    color: #00611d;
+}
+
+#radioLogo {
+    align-self: end;
+    grid-area: logo;
+    margin: 0;
+}
+
+#imgRadioLogo {
+    width: 280px;
+}
+
+#central {
+    grid-area: input;
+    margin: 0 15px;
+}
+
+#offset {
+    background-color: #0a0a0a;
+    border: 2px solid #5a6b5a;
+    border-radius: 5px;
+    color: #686f68;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px 0 30px 5px;
+    padding: 5px 0 5px 8px;
+}
+
+#buttons {
+    grid-area: botao;
+}
+
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #00d040;
+}
+
+#russiaGovLogo {
+    align-self: flex-end;
+    grid-area: logo2;
+    margin-left: 0;
+    text-align: left;
+}
+
+#russianLogo {
+    width: 180px;
+}
+
+#background {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("./img/9df1f736633321.57231de3b7bd1.jpg") repeat-y top center;
+    background-size: cover;
+}
+
+.inputButtons {
+    background-color: #0a0a0a;
+    border: 2px solid #5a6b5a;
+    border-radius: 5px;
+    color: #5a6b5a;
+    cursor: pointer;
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 25px 0;
+    padding: 12px;
+    transition: all 1s;
+    width: 100px;
+}
+
+.inputButtons:hover {
+    background-color: black;
+    color: #00d040;
+    border: 2px solid #00d040;
+}
