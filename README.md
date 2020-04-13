@@ -32,7 +32,7 @@ No exemplo abaixo usamos o deslocamento (_offset_) de 3 posições:
 
 ## 2. Produto
 
-![tela](https://user-images.githubusercontent.com/42393520/79086407-4c3a6480-7d12-11ea-843d-58172c5d584e.png)
+![tela](https://user-images.githubusercontent.com/42393520/79088570-66c40c00-7d19-11ea-8a3b-c92aa90a5de7.png)
 
 ### 2.1. Definição do produto
 
