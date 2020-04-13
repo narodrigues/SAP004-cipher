@@ -1,14 +1,25 @@
+html, body{
+    margin: 0;
+    min-height: 100vh;
+    padding: 0
+}
 body {
-    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("./img/9df1f736633321.57231de3b7bd1.jpg") repeat-y top center;
+    background-size: cover;
     font-family: 'Russo One', sans-serif;
+    min-height: 100%;
+    position: relative;
+    text-align: center;
+}
+#background{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 215px 400px 100px;
+    grid-template-rows: 40vh 30vh 30vh 30vh;
     grid-template-areas:
         "logo logo logo"
         "logo2 input botao"
         "logo2 input botao";
     letter-spacing: 1px;
-    text-align: center;
 }
 
 textarea {
@@ -57,6 +68,7 @@ label {
     font-weight: bold;
     margin: 30px 0 30px 5px;
     padding: 5px 0 5px 8px;
+    max-width: 100px;
 }
 
 #buttons {
@@ -70,19 +82,21 @@ textarea:focus {
 }
 
 #russiaGovLogo {
-    align-self: flex-end;
     grid-area: logo2;
-    margin-left: 0;
+    position: relative;
     text-align: left;
+}
+#russiaGovLogo > img{
+    position: absolute;
+    bottom: 10vh;
 }
 
 #russianLogo {
-    width: 180px;
+    width: 100px;
 }
 
 #background {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("./img/9df1f736633321.57231de3b7bd1.jpg") repeat-y top center;
-    background-size: cover;
+    
 }
 
 .inputButtons {
