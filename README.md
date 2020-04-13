@@ -32,8 +32,6 @@ No exemplo abaixo usamos o deslocamento (_offset_) de 3 posições:
 
 ## 2. Produto
 
-![tela](https://user-images.githubusercontent.com/42393520/79088570-66c40c00-7d19-11ea-8a3b-c92aa90a5de7.png)
-
 ### 2.1. Definição do produto
 
 Como uma entusiasta por histórias misteriosas e envolventes, não poderia deixar de me interessar pelo mistério envolvendo a [rádio UVB - 76](https://pt.wikipedia.org/wiki/UVB-76). Como primeiro projeto pela Laboratória, decidi brincar um pouco com o tema e pensar em uma forma de incorporá-lo ao objetivo proposto.
@@ -42,6 +40,8 @@ Criei esse produto me deixando levar pela teoria de que as transmissões estão 
 Com uma pitada a mais de imaginação, esse site ainda poderia ser utilizado por espiões que, com muita astúcia, obtiveram acesso ao link da rádio.
 
 ### 2.2. Interface
+
+![tela](https://user-images.githubusercontent.com/42393520/79088570-66c40c00-7d19-11ea-8a3b-c92aa90a5de7.png)
 
 ### 2.3. Utilização
 
