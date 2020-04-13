@@ -73,7 +73,7 @@ npm test
 
 * `
 npm run deploy
-` ,o qual é utilizado para publicar o projeto no GitHub Pages.
+`, o qual é utilizado para publicar o projeto no GitHub Pages.
 
 ## 4. Autora 
 
