@@ -28,11 +28,11 @@ substituida por outra que se encontra há um número fixo de posições
 
 No exemplo abaixo usamos o deslocamento (_offset_) de 3 posições:
 
-![caeser-cipher](/img/cifraDeCesar)
+![caeser-cipher](https://user-images.githubusercontent.com/42393520/79086411-4d6b9180-7d12-11ea-8d6f-e034ccdde7b9.png)
 
 ## 2. Produto
 
-![tela](/img/radioPBCH)
+![tela](https://user-images.githubusercontent.com/42393520/79086407-4c3a6480-7d12-11ea-843d-58172c5d584e.png)
 
 ### 2.1. Definição do produto
 
