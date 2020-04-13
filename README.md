@@ -35,7 +35,7 @@ No exemplo abaixo usamos o deslocamento (_offset_) de 3 posições:
 ### 2.1. Definição do produto
 
 Como uma entusiasta por histórias misteriosas e envolventes, não poderia deixar de me interessar pelo mistério envolvendo a [rádio UVB - 76](https://pt.wikipedia.org/wiki/UVB-76). Como primeiro projeto pela Laboratória, decidi brincar um pouco com o tema e pensar em uma forma de incorporá-lo ao objetivo proposto.
-Criei esse produto me deixando levar pela teoria de que as transmissões estão relacionadas ao governo russo e possivelmente às **RVSN** - Forças Estratégicas de Mísseis da Rússia, dessa forma a plataforma que criei auxiliaria o contato entre os transmissores e os receptores do código, no qual poderiam escolher a chave de deslocamento desejada e facilmente cifrar ou decifrar a mensagem a ser enviada. 
+Criei esse produto me deixando levar pela teoria de que as transmissões estão relacionadas ao governo russo e possivelmente às **RVSN** - Forças Estratégicas de Mísseis da Rússia, dessa forma a plataforma que criei auxiliaria o contato entre os transmissores e os receptores do código, no qual poderiam escolher a chave de deslocamento desejada e facilmente cifrar ou decifrar a mensagem secreta a ser enviada ou decifrada. 
 
 Com uma pitada a mais de imaginação, esse site ainda poderia ser utilizado por espiões que, com muita astúcia, obtiveram acesso ao link da rádio.
 
@@ -51,11 +51,12 @@ No site é possível escolher uma chave de deslocamento previamente definida ent
 
 ### 3.1. Ferramentas
 
-Nesse projeto foi utilizado **HTML**, **CSS** e vanilla JavaScript.
+O projeto foi relizado com a utilização de **HTML**, **CSS** e vanilla JavaScript.
 
 ### 3.2. Scripts
 
 Nesse projeto é necessário utilizar alguns comandos para que tudo funcione corretamente.
+
 Primeiramente é importante ter o **Node.JS** e o **NPM** instalados em sua máquinas para executar os comandos a seguir:
 
 * `
@@ -72,7 +73,7 @@ npm test
 
 * `
 npm run deploy
-` para publicar seu projeto no GitHub Pages.
+` ,o qual é utilizado para publicar o projeto no GitHub Pages.
 
 ## 4. Autora 
 
