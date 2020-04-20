@@ -3,18 +3,23 @@ const cipher = {
   encode: function(offset, string){
     let msg = "";
 
-    if(typeof offset !== "number" || typeof string !== "string"){
-      throw new TypeError;
+    if(typeof string !== "string"){
+      throw new TypeError("Digite um número e uma mensagem válida");
     } else {
       for(let i = 0; i < string.length; i++){
         let originalLetter = string.charCodeAt(i);
         let newLetter = null;
-        
-        if(originalLetter >= 65 && originalLetter <= 90){
-          newLetter = ((originalLetter - 65 + offset) % 26) + 65;
-          msg += String.fromCharCode(newLetter);  
-        } else if(originalLetter >= 97 && originalLetter <= 122){
-          newLetter = ((originalLetter - 97 + offset) % 26) + 97;
+        const asciiForA = "A".charCodeAt();
+        const asciiForZ = "Z".charCodeAt()
+        const asciiForLowerCaseA = "a".charCodeAt();
+        const asciiForLowerCaseZ = "z".charCodeAt();
+        const lettersInAlphabet = 26;
+  
+        if(originalLetter >= asciiForA && originalLetter <= asciiForZ){
+          newLetter = ((originalLetter - asciiForA + offset) % lettersInAlphabet) + asciiForA;
+          msg+= String.fromCharCode(newLetter);  
+        } else if(originalLetter >= asciiForLowerCaseA && originalLetter <= asciiForLowerCaseZ){
+          newLetter = ((originalLetter - asciiForLowerCaseA + offset) % lettersInAlphabet) + asciiForLowerCaseA;
           msg += String.fromCharCode(newLetter);  
         } else {
           msg += String.fromCharCode(originalLetter);
@@ -30,12 +35,17 @@ const cipher = {
     for(let i = 0; i < string.length; i++){
       let originalLetter = string.charCodeAt(i);
       let newLetter = null;
+      const asciiForA = "A".charCodeAt();
+      const asciiForZ = "Z".charCodeAt()
+      const asciiForLowerCaseA = "a".charCodeAt();
+      const asciiForLowerCaseZ = "z".charCodeAt();
+      const lettersInAlphabet = 26;
       
-      if(originalLetter >= 65 && originalLetter <= 90){
-        newLetter = ((originalLetter - 90 - offset) % 26) + 90;
+      if(originalLetter >= asciiForA && originalLetter <= asciiForZ){
+        newLetter = ((originalLetter - asciiForZ - offset) % lettersInAlphabet) + asciiForZ;
         msg += String.fromCharCode(newLetter);  
-      } else if(originalLetter >= 97 && originalLetter <= 122){
-        newLetter = ((originalLetter - 122 - offset) % 26) + 122;
+      } else if(originalLetter >= asciiForLowerCaseA && originalLetter <= asciiForLowerCaseZ){
+        newLetter = ((originalLetter - asciiForLowerCaseZ - offset) % lettersInAlphabet) + asciiForLowerCaseZ;
         msg += String.fromCharCode(newLetter);  
       } else {
         msg += String.fromCharCode(originalLetter);
