@@ -8,26 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="background">
-      <figure id="radioLogo">
-        <img src="./img/LogoMakr_6HpEVS.png" alt="Logo da rádio" id="imgRadioLogo">
+    <form id="background">
+      <figure id="radio-logo">
+        <img src="./img/LogoMakr_6HpEVS.png" alt="Logo da rádio" id="img-radio-logo">
       </figure>  
-      <figure id="russiaGovLogo">
-        <img src="./img/kisspng-coat-of-arms-of-russia-government-of-russia-russia--5b6ce07a2e0dc7.2895989815338620101886.png" alt="Logo do Governo Russo" id="russianLogo">
+      <figure id="russia-gov-logo">
+        <img src="./img/kisspng-coat-of-arms-of-russia-government-of-russia-russia--5b6ce07a2e0dc7.2895989815338620101886.png" alt="Logo do Governo Russo" id="russian-logo">
       </figure>
-      <div id="central">  
-        <textarea cols="40" rows="8" class="textArea" id="inputText" placeholder="Digite sua frase"></textarea>
+      <fieldset id="central">  
+        <textarea cols="40" rows="8" id="input-text" placeholder="Digite sua frase"></textarea>
         <label>
           Selecione o deslocamento:
-          <input type="number" min="1" max="10" value="1" id="offset">
         </label>
-        <textarea cols="40" rows="8" class="textArea" id="outputText" disabled></textarea>
-      </div>
-      <div id="buttons">
-        <input type="button" value="Cifrar" class="inputButtons" id="cipherBtn">
-        <input type="button" value="Decifrar" class="inputButtons" id="decipherBtn">
-      </div>
-    </div>
+        <input type="number" min="1" max="10" value="1" id="offset">
+        <textarea cols="40" rows="8" id="output-text" disabled></textarea>
+      </fieldset>
+      <fieldset id="buttons">
+        <input type="button" value="Cifrar" class="input-buttons" id="cipher-btn">
+        <input type="button" value="Decifrar" class="input-buttons" id="decipher-btn">
+      </fieldset>
+    </form>
     
     <script src="index.js" type="module"></script>
   </body>
